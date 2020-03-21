@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />  <link rel="stylsheet" type="text/css" href="css.css" />
+  <link rel="stylesheet" type="text/css" href="css.css" />
+  
+
+  <title> اضافة عميل</title>
+</head>
+<body>
+  <div class="container">
+    <h4 style="border: 1px solid rgb(85, 80, 78)   ; border-radius: 3px" >اضافة عميل جديد</h4>
+    <div  class="footer">
+      <a href="index.html" class="Cbtn Cbtn-primary">اضافة عميل جديد </a>
+      <a href="index1.html" class="Cbtn Cbtn-primary">الطلبات التي قيد التجهيز</a>
+      <a href="index2.html" class="Cbtn Cbtn-primary">الطلبات الجاهزة</a>
+      <a href="index3.html" class="Cbtn Cbtn-primary">الطلبات التي تم تسليمها </a>
+      <a href="index4.html"  class="Cbtn Cbtn-danger">جميع الطلبات </a>
+  </div>
+
+    <form id="student-form" >
+      <div style="border: 1px solid rgb(85, 80, 78)   ; border-radius: 3px"  >
+        <label  for="name">معلومات العميل</label>
+        <input style="width:45% ;" type="text" id="name" class="u-full-width" placeholder="الاسم " >
+        <input style="width:45% ;" type="number" id="mobile" class="u-full-width" placeholder="رقم الجوال " >
+      </div>
+      <br>
+
+      <div style="border: 1px solid rgb(85, 80, 78)   ; border-radius: 3px"  >
+      <label  for="price1"> الحساب </label>
+      <input style="width: 30%;"  type="number" id="price1" class="u-full-width"  placeholder="السعر " >
+      <input style="width: 30%;"  type="number" id="price2" class="u-full-width"  placeholder="العربون" >
+      <input style="width: 30%;" type="number" id="priceB" class="u-full-width"  placeholder="الباقي" readonly >
+      </div>
+            <br>
+      <div style="border: 1px solid rgb(85, 80, 78)   ; border-radius: 3px"  >
+        <label for="theDate">  التاريخ وموعد التسليم </label>
+        <input style="width: 40%;" type="text" id="theDate" class="u-full-width" placeholder="التاريخ" readonly >
+        <input style="width: 40%;" type="text" id="DeliveryIn"class="u-full-width" placeholder="موعد التسليم " >
+      </div>
+      <br>
+
+      <div style="border: 1px solid rgb(85, 80, 78)   ; border-radius: 3px"  >
+        <label for="Details1">تفاصيل الثوب</label>
+        <input style="width: 20%;" type="text" id="Details1"class="u-full-width" placeholder="عدد الاثواب ">
+        <input style="width: 20%;" type="text" id="Details2"class="u-full-width" placeholder="الطول ">
+        <input style="width: 20%;" type="text" id="Details3"class="u-full-width" placeholder="الكتف ">
+        <input style="width: 20%;" type="text" id="Details4"class="u-full-width" placeholder="طول الكم ">
+        <input style="width: 20%;" type="text" id="Details5"class="u-full-width" placeholder="وسع الصدر ">
+        <input style="width: 20%;" type="text" id="Details6"class="u-full-width" placeholder="مقاس الرقبة ">
+        <input style="width: 20%;" type="text" id="Details7"class="u-full-width" placeholder="وسع اليدين " >
+        <input style="width: 20%;" type="text" id="Details8"class="u-full-width" placeholder="نوع القماش" >
+        <input style="width: 20%;" type="text" id="Details9"class="u-full-width" placeholder="الظهر" >
+        <input style="width: 20%;" type="text" id="Details10"class="u-full-width" placeholder="نوع الرقبة" >
+        <input style="width: 20%;" type="text" id="Details11"class="u-full-width" placeholder="نوع الصدر" >
+      </div>
+      <br>
+
+      <div style="border: 1px solid rgb(85, 80, 78)   ; border-radius: 3px" " >
+        <label for="Notes">ملاحظات اضافية </label>
+        <input type="text" id="Notes"class="u-full-width" >
+      </div>
+      <br>
+      <div>
+        <input type="submit" value="اضافة العميل" class="u-full-width">
+      </div>
+    </form>
+  </div>
+ 
+  <dir id="targt" class="row" ></dir>
+
+  <script src="js6.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+</body>
+</html>
