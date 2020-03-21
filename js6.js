@@ -153,12 +153,7 @@ class CustomerUI {
     <div class="header">${theCustomer.IDnumber}</div>
 
     
-    <div class="footer">
-        <a href="#" id="jahez" class="Cbtn Cbtn-primary jahez">جاهز</a>
-        <a href="#" id="prent" class="Cbtn Cbtn-primary tmaltslen">تم التسليم</a>
-        <a href="#" id="prent" class="Cbtn Cbtn-primary">طباعة</a>
-    
-    </div>` ;
+    ` ;
    
     
     div.appendChild(div1);
